@@ -1,5 +1,6 @@
 import Link from "next/link";
 import styled from "styled-components";
+import NavBar from "../src/components/NavBar";
 
 
 const Container = styled.div`
@@ -15,12 +16,21 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 412px){
+    height: 90vh;
+  }
+
+
 `;
 
 const Wrapper = styled.div`
   width: 40%;
   padding: 20px;
   background-color: white;
+  @media (max-width: 412px){
+    width: 300px;
+  }
   
 `;
 
@@ -39,6 +49,10 @@ const Input = styled.input`
   min-width: 40%;
   margin: 20px 10px 0px 0px;
   padding: 10px;
+
+  @media (max-width: 412px){
+    min-width:200px;
+  }
 `;
 
 const Agreement = styled.span`
@@ -58,10 +72,15 @@ const Button = styled.button`
         text-decoration: none;
         color:white;
     }
+    @media (max-width: 412px){
+    
+  }
 `;
 
 const Register = () => {
   return (
+    <>
+    <NavBar/>
     <Container>
       <Wrapper>
         <Title>Cadastro</Title>
@@ -77,6 +96,7 @@ const Register = () => {
         </Form>
       </Wrapper>
     </Container>
+    </>
   );
 };
 

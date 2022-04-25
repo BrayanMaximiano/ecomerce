@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import NavBar from '../src/components/NavBar'
 
 const Container = styled.div`
   width: 100vw;
@@ -13,12 +14,18 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  @media (max-width: 412px){
+        height: 90vh;
+    } 
 `;
 
 const Wrapper = styled.div`
   width: 25%;
   padding: 20px;
   background-color: white;
+  @media (max-width: 412px){
+        width: auto;
+    } 
 `;
 
 const Title = styled.h1`
@@ -36,6 +43,7 @@ const Input = styled.input`
   min-width: 40%;
   margin: 10px 0;
   padding: 10px;
+  
 `;
 
 const Button = styled.button`
@@ -52,6 +60,12 @@ const Button = styled.button`
      color: white;
      font-size: 20px;
   }
+  @media (max-width: 412px){
+        width: fit-content;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+    } 
 `;
 
 const Link = styled.a`
@@ -68,6 +82,8 @@ const Link = styled.a`
 
 const Login = () => {
   return (
+    <>
+    <NavBar/>
     <Container>
       <Wrapper>
         <Title>ENTRAR</Title>
@@ -80,6 +96,7 @@ const Login = () => {
         </Form>
       </Wrapper>
     </Container>
+    </>
   );
 };
 

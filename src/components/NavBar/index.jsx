@@ -29,7 +29,7 @@ export default function NavBar() {
                 </Left>
 
                 <Center>
-                    <Logo>UrStore</Logo>
+                    <Logo><Link href="/">UrStore</Link></Logo>
                 </Center>
 
                 <Rigth>

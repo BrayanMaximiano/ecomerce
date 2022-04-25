@@ -14,6 +14,12 @@ export const Info = styled.div`
     justify-content: center;
     transition: all ease 0.5s;
 
+    @media (max-width: 412px){
+        opacity:1;
+        background-color: rgba(0,0,0,0.001);
+        
+    }
+
 
 `
 
@@ -31,6 +37,13 @@ export const Container = styled.div`
     &:hover ${Info}{
         opacity: 1;
     }
+
+    @media (max-width: 412px){
+        height: 200px;
+        width: 200px;
+        min-width:200px;
+        
+    }
 `
 export const Circle = styled.div`
     width: 200px;
@@ -38,10 +51,21 @@ export const Circle = styled.div`
     border-radius: 50%;
     background-color: white;
     position: absolute;
+
+    @media (max-width: 412px){
+        height: 100%;
+        width: 250px;
+        
+    }
 `
 export const Image = styled.img`
     height: 75%;
     z-index: 2;
+
+    @media (max-width: 412px){
+        height: 100%;
+        
+    }
 `
 
 export const Icon = styled.div`

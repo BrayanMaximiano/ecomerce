@@ -19,10 +19,16 @@ export const Logo = styled.h1`
 export const Desc = styled.p`
     font-size: 20px;
     justify-content: center;
+    @media (max-width: 412px){
+        font-size: 14px;
+    }
 `
 
 export const Center = styled.div`
     flex:1;
+    @media (max-width: 412px){
+        display: none;
+    } 
 `
 export const Rigth = styled.div`
     flex:1;
@@ -31,12 +37,20 @@ export const Rigth = styled.div`
     flex-direction: column;
     padding-top:30px;
     align-items: center;
+    @media (max-width: 412px){
+        justify-content: space-around;
+    } 
 `
 export const Address = styled.h2`
-    
+   @media (max-width: 412px){
+        font-size: 18px;
+        margin-bottom: -100px;
+    } 
 `
 export const Phone = styled.h2`
-
+    @media (max-width: 412px){
+        font-size: 18px;
+    } 
 `
 
 export const Payment = styled.img`
@@ -44,5 +58,11 @@ export const Payment = styled.img`
     height: 70px;
     position: absolute;
     bottom: 4rem;
+    @media (max-width: 412px){
+        width: 100%;
+        height: 35px;
+        position: relative;
+        margin-right: 10px;
+    }
 `
 

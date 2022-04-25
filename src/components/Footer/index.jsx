@@ -7,7 +7,7 @@ const index = () => {
     <Container>
         <Left>
             <Logo>UrStore</Logo>
-            <Desc>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, debitis eum. Itaque repellendus eligendi quaerat molestias at aperiam obcaecati officiis, accusamus cumque, molestiae quia quas maxime quae illum iure vero laboriosam voluptatibus tempore ratione beatae. Id maxime iure, quos sint expedita dolorum perferendis reiciendis, ipsum quibusdam fugit temporibus? Temporibus deserunt praesentium, dolorum laudantium sit fugit est nisi expedita atque, quis facere. Nulla quaerat animi veniam quibusdam ex beatae esse quas minima at, laborum est consectetur aspernatur consequuntur accusamus magni porro?</Desc>
+            <Desc>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat quia tenetur, eos quidem veritatis praesentium. Asperiores adipisci sint veniam labore dolores amet porro, dicta nam facere maiores quibusdam harum. Incidunt!</Desc>
         </Left>
 
         <Center>

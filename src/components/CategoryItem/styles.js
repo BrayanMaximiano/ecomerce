@@ -4,6 +4,7 @@ export const Container = styled.div`
     flex: 1;
     margin:10px;
     height: 70vh;
+    min-height: 70vh;
     position: relative;
     cursor: pointer;
     transition: all ease 1s;
@@ -14,6 +15,14 @@ export const Container = styled.div`
     &:hover{
         opacity:0.7;
     }
+
+    @media (max-width: 412px){
+        height: 50vh;
+        min-height: 50vh;
+        
+    }
+    
+    
 `
 export const Image = styled.img`
     width: 100%;
@@ -42,6 +51,11 @@ export const Title = styled.h1`
     text-align:center;
     text-shadow: 5px 2px 3px rgba(0, 0, 0, 0.54);
     transition: all ease 1s;
+
+    @media (max-width: 412px){
+        font-size: 30px;
+        
+    }
 `
 export const Button = styled.button`
     border:none;

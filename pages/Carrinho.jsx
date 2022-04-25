@@ -5,10 +5,16 @@ import Footer from '../src/components/Footer'
 import NavBar from "../src/components/NavBar";
 
 
-const Container = styled.div``;
+const Container = styled.div`
+  
+`;
 
 const Wrapper = styled.div`
   padding: 20px;
+  @media (max-width: 412px){
+    display: flex;
+    flex-direction: column;
+  }
   
 `;
 

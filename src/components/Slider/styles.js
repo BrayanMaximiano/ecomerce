@@ -6,6 +6,10 @@ export const Container = styled.div`
     display: flex;
     overflow: hidden;
     position: relative;
+    @media (max-width: 412px){
+        width: 100%;
+        height: 70vh;
+    }
 `
 
 export const Arrow = styled.div`
@@ -29,6 +33,11 @@ export const Arrow = styled.div`
     &:hover{
         opacity: 0.8;
     }
+    @media (max-width: 412px){
+        left:${props=>props.direction === "left" && "5px"};
+        right:${props=>props.direction === "right" && "5px"};
+        background-color: transparent;
+    }
 
 `
 
@@ -47,6 +56,9 @@ export const Slide = styled.div`
     width: 100vw;
     height: 100vh;
     background-color: #${props=>props.bg};
+    @media (max-width: 412px){
+        flex-direction:column ;
+    }
     
 `
 
@@ -56,16 +68,27 @@ export const ImgContainer = styled.div`
     height: 100%;
     justify-content: center;
     align-items:center;
+
+    @media (max-width: 412px){
+        display: none;
+        
+    }
 `
 
 export const Image = styled.img`
     height: 80%;
+
+   
     
 `
 
 export const InfoContainer = styled.div`
     flex: 1;
     align-items: center;
+
+    @media (max-width: 412px){
+        text-align: center;
+    }
     
 `
 
@@ -81,6 +104,10 @@ export const Desc= styled.p`
     font-weight: 500;
     letter-spacing: 3px;
     width: 85%;
+    @media (max-width: 412px){
+        margin-left: 20px;
+        font-size: 20px;
+    }
 `
 
 export const Button = styled.button`
